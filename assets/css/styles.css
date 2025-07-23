@@ -6,6 +6,11 @@
     --primary-color: #0f1b4c;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -64,7 +69,7 @@ a {
     display: flex;
     flex-direction: column;
     background: #e6f0ff;
-    height: 100vh;
+    height: calc(100vh - 90px);
 }
 
 .navbar {
@@ -183,7 +188,7 @@ a {
 }
 
 .clients .client-logo a:hover {
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 /* ============= Guides =============== */
@@ -599,8 +604,9 @@ a {
     margin-top: 18px;
 }
 
-.footer .item .link, .footer .desc {
-    color: #7A7A7E;
+.footer .item .link,
+.footer .desc {
+    color: #7a7a7e;
     font-size: 1.6rem;
     font-weight: 400;
     white-space: nowrap;
@@ -622,7 +628,7 @@ a {
 }
 
 .footer .copyright {
-    color: #C2C2C2;
+    color: #c2c2c2;
     font-size: 1.4rem;
     font-weight: 400;
 }
